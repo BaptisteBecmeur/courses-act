@@ -3,4 +3,8 @@ class Chapter < ActiveRecord::Base
   belongs_to :course
 
   validates_presence_of :title
+
+  def position_and_name
+    "#{position} #{name}"
+  end
 end
