@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'items/show'
 
-  get 'show/index'
+  # get 'show/index'
 
   devise_for :users
   root to: 'pages#home'
