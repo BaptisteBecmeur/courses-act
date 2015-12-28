@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  get 'courses/index'
+
+  get 'courses/show'
+
   get 'about', to: 'pages#about'
   # get 'show/index'
 
