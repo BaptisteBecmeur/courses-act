@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :items, only: [:show], path: "" # => friendly-id
+  get 'pages/about'
+  # get 'show/index'
+
   devise_for :users
   root to: 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
