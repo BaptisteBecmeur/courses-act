@@ -4,6 +4,9 @@ class Course < ActiveRecord::Base
     validates_presence_of :title
 
   	extend FriendlyId
-	friendly_id :name, use: :slugged
-	end
+		friendly_id :name, use: :slugged
+
+   	def position_and_name
+    "#{position} #{name}"
+   	end
 end
