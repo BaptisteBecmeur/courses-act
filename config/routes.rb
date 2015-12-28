@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'items/show'
+
   get 'show/index'
 
   devise_for :users
