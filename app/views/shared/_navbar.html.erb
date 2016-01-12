@@ -45,8 +45,8 @@
         </div>
       </div>
     <% else %>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signUp">
-  Sign Up
+    <button data-toggle="modal" data-target="#apply">
+
 
       <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
@@ -57,7 +57,7 @@
 </nav>
 
 <!-- Sign-up Modal -->
-<div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="apply" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
