@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  
-  get 'courses/index'
 
-  get 'courses/show'
+  # get 'courses/index'
+
+  # get 'courses/show'
 
   get 'about', to: 'pages#about'
   # get 'show/index'
@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   resources :items, only: [:show], path: "" # => friendly-id
-  
+  resources :courses, only: [:show], path:""
+
 end
