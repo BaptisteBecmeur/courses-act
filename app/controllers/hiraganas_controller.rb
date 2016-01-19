@@ -1,7 +1,7 @@
 class HiraganasController < ApplicationController
 
-# before_action :find_hiragana, only: [:index, :show, :edit, :update, :destroy]
-
+before_filter :authenticate_user!, except: [:index, :show]
+before_action :find_hiragana, only: [:show, :edit, :update, :destroy]
 
   def index
     @hiraganas = Hiragana.all
@@ -16,7 +16,7 @@ class HiraganasController < ApplicationController
   end
 
   def create
-    @hiragana = Hiragana.new(post_params)
+    @hiragana = Hiragana.new(hiragana_params)
     if @hiragana.save
       redirect_to @hiragana
     else
