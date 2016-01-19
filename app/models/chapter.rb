@@ -5,10 +5,6 @@ class Chapter < ActiveRecord::Base
   has_many :items, -> { order(position: :asc) }
 
   validates_presence_of :title
-
-  def position_and_name
-    "#{position} #{name}"
-  end
 end
 
 

@@ -8,7 +8,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'devise'
 gem 'active_record-acts_as'
 gem 'acts_as_list'
-gem 'friendly_id'
+# gem 'friendly_id'
 gem "omniauth-google-oauth2", "~> 0.2.1"
 
 gem 'sass-rails', '~> 5.0'
