@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   # get 'hiraganas/destroy'
 
-  resources :hiraganas, only: [:index, :show, :new]
+  resources :hiraganas, only: [:index, :show, :new, :create]
 
   # get 'chapters/show'
 

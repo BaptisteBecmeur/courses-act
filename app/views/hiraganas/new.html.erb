@@ -1,2 +1,21 @@
-<h1>Hiraganas#new</h1>
-<p>Find me in app/views/hiraganas/new.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class= "col-md-8 col-md-offset-2">
+
+      <h1 class="text-center">Création Cartes</h1>
+      <%= simple_form_for @hiragana do |f| %>
+        <%= f.error_notification %>
+        <%= f.input :ideoone, label: "Ideogramme Hiragana" %>
+         <%= f.input :ideotwo, label: "Ideogramme Katakana" %>
+        <%= f.input :upletter, label: "Lettre en langue latine", placeholder: "Lettre attribuée en majuscule A" %>
+        <%= f.input :transcription, label: "transcription en langue latine" %>
+         <%= f.input :audioclick, label: "son" %>
+        <%= f.submit "Créer", class: "btn btn-primary" %>
+      <% end %>
+      <h4 class="text-center">
+        <%= link_to '< Retour', :back, class: "btn btn-default" %>
+      </h4>
+
+    </div>
+  </div>
+</div>
