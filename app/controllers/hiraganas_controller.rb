@@ -1,6 +1,6 @@
 class HiraganasController < ApplicationController
 
-before_filter :authenticate_user!, except: [:index, :show]
+# before_filter :authenticate_user!, except: [:index, :show]
 # before_action :find_hiragana, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -16,12 +16,11 @@ before_filter :authenticate_user!, except: [:index, :show]
   end
 
   def create
-    @hiragana = current_user.hiraganas.new(hiragana_params)
-    if @hiragana.save
+    @hiragana = Hiragana.new(hiragana_params)
+    @hiragana.save
       redirect_to @hiragana
-    else
-      render :new
-    end
+    # else
+    #   render :new
   end
 
   def edit
@@ -42,9 +41,9 @@ before_filter :authenticate_user!, except: [:index, :show]
 
   private
 
-  def find_hiragana
-    @hiragana = Hiragana.find(params[:id])
-  end
+  # def find_hiragana
+  #   @hiragana = Hiragana.find(params[:id])
+  # end
 
   def hiragana_params
     params.require(:hiragana).permit(:ideoone, :ideotwo, :transcription, :upletter, :audioclick)
