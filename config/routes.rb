@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'chapters/show'
+
 get 'about', to: 'pages#about'
   get 'start', to: 'pages#start'
   get 'contact', to: 'pages#contact'
@@ -16,7 +18,5 @@ get 'about', to: 'pages#about'
 
 
   get 'courses', to: 'courses#index'
-
-
 
 end
