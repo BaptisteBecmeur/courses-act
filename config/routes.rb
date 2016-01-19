@@ -1,20 +1,7 @@
 Rails.application.routes.draw do
 
-  get 'hiraganas/index'
 
-  get 'hiraganas/show'
 
-  get 'hiraganas/new'
-
-  get 'hiraganas/create'
-
-  get 'hiraganas/edit'
-
-  get 'hiraganas/update'
-
-  get 'hiraganas/destroy'
-
-  get 'chapters/show'
 
 get 'about', to: 'pages#about'
   get 'start', to: 'pages#start'
@@ -32,5 +19,7 @@ get 'about', to: 'pages#about'
 
 
   get 'courses', to: 'courses#index'
+
+  resources :hiragana
 
 end
