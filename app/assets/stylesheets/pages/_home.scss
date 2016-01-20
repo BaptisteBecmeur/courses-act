@@ -206,6 +206,12 @@
     li { position: relative; }
   }
 
+
+    .audioclick {
+       color:red;
+
+    }
+
     .card-question {
       color:white;
       text-transform: uppercase;
@@ -223,7 +229,7 @@
     }
 
     .card-hiragana {
-      margin-top: 35px;
+      margin-top: 10px;
       font-size: 120px;
 
     p:hover {
