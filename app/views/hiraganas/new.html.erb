@@ -7,7 +7,13 @@
         <%= f.error_notification %>
         <%= f.input :ideoone, label: "Ideogramme Hiragana" %>
          <%= f.input :ideotwo, label: "Ideogramme Katakana" %>
-        <%= f.input :upletter, label: "Lettre en langue latine", placeholder: "Lettre attribuée en majuscule A" %>
+        <div class="row">
+        <div class="col-sm-6">
+          <%= f.input :randomletter, label: "Lettre alphabet", placeholder: "toutes lettres" %>
+        </div>
+        <div class="col-sm-6">
+        <%= f.input :upletter, label: "Lettre en langue latine", placeholder: "a, e, i, o, u" %>
+        </div>
         <%= f.input :transcription, label: "transcription en langue latine" %>
          <%= f.input :audioclick, label: "son" %>
         <%= f.submit "Créer", class: "btn btn-primary" %>
