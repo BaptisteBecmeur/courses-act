@@ -177,7 +177,7 @@
     margin-bottom: 30px;
 
   h1 {
-    margin:30px;
+    margin:20px;
     padding-top: 10px;
     letter-spacing: 2px;
     line-heigth: 35px;
@@ -189,8 +189,8 @@
     position: relative;
     border-radius: 6px;
     margin: 20px;
-    padding: 10px;
-    height: 300px;
+    padding-bottom: 10px;
+    height: 320px;
     width: 200px;
     overflow: visible;
     background-color: white;
@@ -283,6 +283,53 @@
       cursor: default;
     }
   }
+
+    .hiragana-ko {
+      color: black;
+
+    p:hover {
+      color: $blue;
+      cursor: default;
+    }
+  }
+
+    .hiragana-so {
+      color: black;
+
+    p:hover {
+      color: $blue;
+      cursor: default;
+    }
+  }
+
+  .hiragana-to {
+      color: black;
+
+    p:hover {
+      color: $blue;
+      cursor: default;
+    }
+  }
+
+  .hiragana-no {
+      color: black;
+
+    p:hover {
+      color: $blue;
+      cursor: default;
+    }
+  }
+
+  .hiragana-mo {
+      color: black;
+
+    p:hover {
+      color: $blue;
+      cursor: default;
+    }
+  }
+
+
 
     .card-katakana {
       color: black;
