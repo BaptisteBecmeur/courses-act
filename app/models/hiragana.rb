@@ -4,4 +4,6 @@ class Hiragana < ActiveRecord::Base
   validates :ideotwo, presence: true
   validates :transcription, presence: true
   validates :upletter, presence: true
+
+  # mount_uploader :cover, ImageUploader
 end
