@@ -34,25 +34,38 @@
 
 
 
-
-<div class="flip">
-    <div class="card">
-
-
-        <div class="face front">
-
+<div class="container-page">
+  <div class="padding-page">
+    <div class="container-fluid" id="start-cards">
+      <div class="row">
+          <h1 class="text-center">New card created! It's nice!</h1>
 
 
-          Front
+              <div class="flip">
+                  <div class="card">
+
+
+                      <div class="face front">
+
+
+
+                        Front
+                      </div>
+
+
+                      <div class="face back">
+                        Back
+                      </div>
+
+
+              </div>
+            </div>
+          </div>
         </div>
-
-
-        <div class="face back">
-          Back
-        </div>
-
-
-    </div>
+      <h4 class="text-center">
+        <%= link_to "< Retour", :back,  class: "btn btn-default"  %>
+      </h4>
+  </div>
 </div>
 
 

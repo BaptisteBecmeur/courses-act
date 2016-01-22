@@ -367,11 +367,14 @@
 
 .flip {
   -webkit-perspective: 800;
-   width: 400px;
-   height: 200px;
+    height: 320px;
+    width: 200px;
     position: relative;
-    margin: 50px auto;
+    margin: 30px auto;
+    overflow: visible;
+    padding-bottom: 10px;
 }
+
 .flip .card.flipped {
   -webkit-transform: rotatex(-180deg);
 }
@@ -387,7 +390,7 @@
   position: absolute;
   -webkit-backface-visibility: hidden ;
   z-index: 2;
-    font-family: Georgia;
+    font-family: Open Sans;
     font-size: 3em;
     text-align: center;
     line-height: 200px;
@@ -395,7 +398,7 @@
 .flip .card .front {
   position: absolute;
   z-index: 1;
-    background: black;
+    background: white;
     color: white;
     cursor: pointer;
 }
