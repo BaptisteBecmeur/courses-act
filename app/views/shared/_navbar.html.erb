@@ -2,7 +2,7 @@
   <div class="container navbar-wagon-container">
 
     <a href="">
-      <%= image_tag "logo.png", class: "navbar-wagon-logo" %>
+      <%= image_tag "http://res.cloudinary.com/dzr44aeiu/image/upload/v1453215144/logo-head_u0te0y.png", class: "navbar-wagon-logo" %>
     </a>
 
     <div class="navbar-wagon-pusher"></div>
@@ -45,30 +45,13 @@
         </div>
       </div>
     <% else %>
-    <button data-toggle="modal" data-target="#apply">
-
 
       <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
-    </button>
+
     <hr>
-    <%= link_to t(".top_call_to_action", default: "Post stuff"), "#", class: "navbar-wagon-item navbar-wagon-button btn" %>
+    <%= link_to t(".top_call_to_action", default: "New card"), new_hiragana_path, class: "navbar-wagon-item navbar-wagon-button btn" %>
   </div>
 </nav>
 
-<!-- Sign-up Modal -->
-<div class="modal fade" id="apply" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
-      </div>
-      <div class="modal-body">
-        <!-- Your signup form -->
-      </div>
-    </div>
-  </div>
-</div>
+

@@ -8,7 +8,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'devise'
 gem 'active_record-acts_as'
 gem 'acts_as_list'
-gem 'friendly_id'
+# gem 'friendly_id'
+# gem "omniauth-google-oauth2", "~> 0.2.1"
 
 gem 'sass-rails', '~> 5.0'
 gem 'jquery-rails'
@@ -17,6 +18,9 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
+
+gem 'carrierwave'
+gem 'cloudinary'
 
 group :development, :test do
   gem 'binding_of_caller'

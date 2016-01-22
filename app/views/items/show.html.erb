@@ -1,2 +1,20 @@
-<h1>Items#show</h1>
-<p>Find me in app/views/items/show.html.erb</p>
+<div class="container-page">
+  <div class="padding-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="page-progress">
+
+            <h2><%= @item.title %></h2>
+
+            <div>
+              <%= @item.specific.content %>
+            </div>
+
+            <%= link_to "< back", [@chapter.course, @chapter] %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

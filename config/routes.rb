@@ -1,16 +1,38 @@
 Rails.application.routes.draw do
 
-  # get 'courses/index'
+  # get 'hiraganas/index'
 
-  # get 'courses/show'
+  # get 'hiraganas/show'
 
-  get 'about', to: 'pages#about'
-  # get 'show/index'
+  # get 'hiraganas/new'
 
-  devise_for :users
+  # get 'hiraganas/create'
+
+  # get 'hiraganas/edit'
+
+  # get 'hiraganas/update'
+
+  # get 'hiraganas/destroy'
+
+  resources :hiraganas, only: [:index, :show, :new, :create]
+
+  # get 'chapters/show'
+
+get 'about', to: 'pages#about'
+  get 'start', to: 'pages#start'
+  get 'contact', to: 'pages#contact'
+  get 'legal', to: 'pages#legal'
+
   root to: 'pages#home'
+  devise_for :users
 
-  resources :items, only: [:show], path: "" # => friendly-id
-  resources :courses, only: [:show], path:""
+  resources :courses, only: [:show] do
+    resources :chapters, only: [:show] do
+      resources :items, only: [:show]
+    end
+  end
+
+
+  get 'courses', to: 'courses#index'
 
 end
