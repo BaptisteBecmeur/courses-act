@@ -37,7 +37,7 @@
 
 <div class="container-page">
   <div class="padding-page">
-    <div class="container-fluid" id="start-cards">
+    <div class="container-fluid">
       <div class="row">
           <h1 class="text-center">New card created! It's nice!</h1>
 
@@ -45,12 +45,20 @@
               <div class="flip">
                   <div class="card">
 
+                    <div class="card-details">
 
                       <div class="face front">
 
 
+                      <div class="card-hiragana hiragana-<%=@hiragana.upletter.downcase.last%>">
+                        <p><%= @hiragana.ideoone %></p>
+                      </div>
 
-                        Front
+                      <div class="card-katakana">
+                        <p><%= @hiragana.ideotwo %></p>
+                      </div>
+
+
                       </div>
 
 
@@ -63,12 +71,36 @@
             </div>
           </div>
         </div>
+        <h4 class="text-center">
+          <%= link_to "< Retour", :back,  class: "btn btn-default"  %>
+        </h4>
+  </div>
+</div>
+
+<div class="container-page">
+  <div class="padding-page">
+    <div class="container-fluid">
+      <div class="row">
+
+        <ul class="flipping-cards">
+          <li class="">
+            <input type="checkbox" id="item1">
+            <label for="item1">
+              <span class="wrapper">
+                <span class="image"></span>
+                <span class="back"></span>
+              </span>
+            </label>
+          </li>
+        </ul>
+
+      </div>
+    </div>
       <h4 class="text-center">
         <%= link_to "< Retour", :back,  class: "btn btn-default"  %>
       </h4>
   </div>
 </div>
-
 
 
 
