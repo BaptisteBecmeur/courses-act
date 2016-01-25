@@ -24,6 +24,7 @@ class HiraganasController < ApplicationController
   end
 
   def edit
+    @hiragana = Hiragana.find(params[:id])
   end
 
   def update
@@ -46,7 +47,7 @@ class HiraganasController < ApplicationController
   # end
 
   def hiragana_params
-    params.require(:hiragana).permit(:ideoone, :ideotwo, :transcription, :upletter, :audioclick)
+    params.require(:hiragana).permit(:ideoone, :ideotwo, :transcription, :upletter, :audioclick, :ideopix)
   end
 end
 
