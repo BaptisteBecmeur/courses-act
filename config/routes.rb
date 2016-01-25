@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'users/index'
+
+  get 'users/show'
+
   # get 'hiraganas/index'
 
   # get 'hiraganas/show'
@@ -14,7 +18,7 @@ Rails.application.routes.draw do
 
   # get 'hiraganas/destroy'
 
-  resources :hiraganas, only: [:index, :show, :new, :create]
+  resources :hiraganas, only: [:index, :show, :new, :create, :edit, :updat]
 
   # get 'chapters/show'
 

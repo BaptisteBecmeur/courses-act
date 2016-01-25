@@ -24,19 +24,25 @@
             </div>
           </li>
         </ul>
+
+            <ul class="list-inline text-center">
+          <li>
+            <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-<%=@hiragana.upletter.downcase.last%>">
+                <div class="backcard-hiragana">
+                  <p><%= @hiragana.ideoone %></p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+           <h4 class="text-center">
+          <%= link_to "< Retour", :back,  class: "btn btn-default"  %>
+          </h4>
+
       </div>
     </div>
-      <h4 class="text-center">
-        <%= link_to "< Retour", :back,  class: "btn btn-default"  %>
-      </h4>
   </div>
 </div>
-
-
-
-
-
-
 
 
 

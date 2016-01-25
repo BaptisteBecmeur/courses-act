@@ -30,3 +30,30 @@
     })
   </script>
 
+  <!-- js flipcard -->
+
+  <script>
+    $('.flip').click(function(){
+        $(this).find('.card').addClass('flipped').mouseleave(function(){
+            $(this).removeClass('flipped');
+        });
+        return false;
+    });
+  </script>
+
+
+<!-- Js last flipcard -->
+
+<script>
+  if (!Modernizr.csstransforms3d) {
+    $('label').click(function() {
+        $('.animate .front').removeClass('front');
+        $(this).addClass('front');
+    });
+}
+</script>
+
+
+<!-- Js Flipcard good -->
+
+
